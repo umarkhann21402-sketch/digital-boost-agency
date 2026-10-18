@@ -1,0 +1,1287 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07111f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(7, 17, 31, 0.95);
+    border-bottom: 1px solid #17263a;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #19d3ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #c5d0df;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #19d3ff;
+}
+
+.nav-button,
+.primary-button {
+    display: inline-block;
+    background: #19d3ff;
+    color: #03101c;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1200px;
+    min-height: 700px;
+    margin: auto;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.small-title {
+    color: #19d3ff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span,
+.about-content h2 span {
+    color: #19d3ff;
+}
+
+.hero-text {
+    color: #aebdce;
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.secondary-button {
+    border: 1px solid #34485f;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.secondary-button:hover {
+    border-color: #19d3ff;
+    color: #19d3ff;
+}
+
+.hero-card {
+    width: 350px;
+    padding: 40px;
+    border: 1px solid #24364c;
+    border-radius: 20px;
+    background: #0c1a2c;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    color: #aebdce;
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #26384e;
+}
+
+.stats strong {
+    display: block;
+    font-size: 24px;
+    color: #19d3ff;
+}
+
+.stats small {
+    color: #9baabc;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 55px;
+}
+
+.section-heading h2,
+.about-content h2,
+.contact-content h2 {
+    font-size: clamp(36px, 5vw, 55px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.section-heading > p:last-child,
+.contact-content > p:last-child {
+    color: #aebdce;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    padding: 35px;
+    background: #0c1a2c;
+    border: 1px solid #1d3047;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #19d3ff;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #9eafc2;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    background: #0b1829;
+    padding: 100px max(20px, calc((100% - 1200px) / 2));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-content p:not(.small-title) {
+    color: #aebdce;
+    margin-bottom: 20px;
+}
+
+.about-content .primary-button {
+    margin-top: 15px;
+}
+
+.about-box {
+    padding: 40px;
+    border: 1px solid #263b54;
+    border-radius: 20px;
+    background: #07111f;
+}
+
+.about-number {
+    color: #19d3ff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.about-box h3 {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.about-box p {
+    color: #9eafc2;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.contact-content p {
+    color: #aebdce;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    border-top: 1px solid #1d3047;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.footer p {
+    color: #8293a8;
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.footer-links a:hover {
+    color: #19d3ff;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    border-top: 1px solid #1d3047;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 70px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+}
+/* ================================
+   SOCIAL MEDIA SECTION
+================================ */
+
+.social-section {
+    padding: 100px 8%;
+    text-align: center;
+    background: #0b0f19;
+}
+
+.social-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.social-section h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.social-section p {
+    color: #aeb7c6;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.social-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+/* Facebook */
+.facebook {
+    background: #1877f2;
+}
+
+/* Instagram */
+.instagram {
+    background: linear-gradient(45deg, #feda75, #d62976, #4f5bd5);
+}
+
+/* TikTok */
+.tiktok {
+    background: #111111;
+}
+
+/* Threads */
+.threads {
+    background: #222222;
+}
+
+/* WhatsApp */
+.whatsapp {
+    background: #25d366;
+}
+
+
+/* ================================
+   FLOATING WHATSAPP BUTTON
+================================ */
+
+.whatsapp-float {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    background: #25d366;
+    color: white;
+
+    padding: 16px 22px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+
+    z-index: 9999;
+
+    transition: 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(37,211,102,0.4);
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .social-section {
+        padding: 70px 20px;
+    }
+
+    .social-section h2 {
+        font-size: 32px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .social-btn {
+        width: auto;
+    }
+
+    .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+        padding: 14px 18px;
+    }
+}
+/* ================================
+   SOCIAL MEDIA ICONS
+================================ */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: white;
+    font-size: 24px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-6px) scale(1.08);
+}
+
+/* Facebook */
+.social-icon.facebook {
+    background: #1877f2;
+}
+
+/* Instagram */
+.social-icon.instagram {
+    background: linear-gradient(45deg, #feda75, #d62976, #4f5bd5);
+}
+
+/* TikTok */
+.social-icon.tiktok {
+    background: #111111;
+}
+
+/* Threads */
+.social-icon.threads {
+    background: #222222;
+}
+
+/* WhatsApp */
+.social-icon.whatsapp {
+    background: #25d366;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .social-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 21px;
+    }
+
+    .social-links {
+        gap: 12px;
+    }
+}
+/* WhatsApp Floating Logo */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #25d366;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 32px;
+    text-decoration: none;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
+
+    z-index: 9999;
+
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+/* Professional Growth Chart */
+
+.growth-chart {
+    width: 90px;
+    height: 65px;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    padding: 8px;
+    border-bottom: 2px solid #19d3ff;
+}
+
+.growth-chart span {
+    display: block;
+    width: 12px;
+    background: #19d3ff;
+    border-radius: 4px 4px 0 0;
+    animation: chartGrow 1.2s ease forwards;
+}
+
+.growth-chart span:nth-child(1) {
+    height: 20px;
+}
+
+.growth-chart span:nth-child(2) {
+    height: 30px;
+}
+
+.growth-chart span:nth-child(3) {
+    height: 40px;
+}
+
+.growth-chart span:nth-child(4) {
+    height: 50px;
+}
+
+.growth-chart span:nth-child(5) {
+    height: 60px;
+}
+
+@keyframes chartGrow {
+    from {
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+/* =========================
+   NAVIGATION IMPROVEMENT
+========================= */
+
+.nav-links a {
+    color: #19d3ff;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}.nav-links a {
+    color: #19d3ff;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-links a:hover {
+    color: #19d3ff;
+}
+
+.navbar {
+    background: transparent;
+}
+/* Premium Navigation Hover */
+.nav-links a {
+    position: relative;
+    color: #19d3ff;
+    font-weight: 600;
+    padding: 8px 2px;
+}
+.nav-links a::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+
+width: 0;
+height: 2px;
+
+background: #19d3ff;
+
+transition: width 0.3s ease;
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+.nav-links a:hover {
+    color: #ffffff;
+}
+/* =========================
+   HERO GLOW EFFECT
+========================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    background: #19d3ff;
+    opacity: 0.08;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    top: 80px;
+    left: -150px;
+
+    pointer-events: none;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background: #19d3ff;
+    opacity: 0.06;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+    
+    right: -100px;
+    bottom: 50px;
+
+pointer-events: none;
+}
+.hero-content,
+.hero-card {
+    position: relative;
+    z-index: 1;
+}
+
+/* PROFESSIONAL SERVICE CARDS */
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease,
+                border-color 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #19d3ff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: #19d3ff;
+    box-shadow: 0 15px 40px rgba(25, 211, 255, 0.12);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-icon {
+    transition: transform 0.35s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.15);
+}
+
+
+/* PROFESSIONAL ABOUT SECTION */
+
+.about-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+}
+
+.about-box {
+    position: relative;
+    transition: transform 0.35s ease,
+                border-color 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-8px);
+    border-color: #19d3ff;
+    box-shadow: 0 20px 50px rgba(25, 211, 255, 0.12);
+}
+
+.about-number {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #19d3ff;
+    border-radius: 6px;
+}
+
+.about-box h3 {
+    color: #ffffff;
+}
+
+/* =========================
+  CONNECT SECTION
+========================= */
+
+.social-section {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 20px;
+    text-align: center;
+    background: #0b1829;
+    border-top: 1px solid
+#1d3047;
+border-bottom: 1px solid
+#1d3047;
+}
+.social-container{
+    max-width: 800px;
+    margin: auto;
+}
+.social-section h2 {
+    font-size: clamp(36px, 5vw, 55px);
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+.social-section p {
+    color: #aebdce;
+    font-size: 17px;
+}
+.social-links {
+    margin-top: 35px;
+}
+.social-icon {
+    box-shadow: 0 8px 25px
+rgba(0, 0, 0, 0.25);
+}
+.social-icon:hover {
+    box-shadow: 0 12px 35px
+rgba(25, 211, 255, 0.25);
+}
+/* =========================
+   PROFESSIONAL FOOTER
+========================= */
+
+.footer {
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+.footer .logo {
+    font-size: 26px;
+}
+.footer > div:first-child p {
+    max-width: 350px;
+    font-size: 15px;
+}
+.footer-links a {
+    position: relative;
+    color: #b8c6d6;
+    transition: 0.3s ease;
+}
+.footer-links a:hover {
+    color: #19d3ff;
+    transform: translateY(-2px);
+}
+.copyright {
+    color: #6f8094 !important;
+    text-align: center;
+    margin-top: 20px;
+}
+/* =========================
+  MOBILE IMPROVEMENTS
+========================= */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-container {
+        padding: 15px 20px;
+    }
+    .nav-links {
+        gap: 15px;
+    }
+    .nav-links a {
+        font-size: 14px;
+    }
+    .nav-button {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
+    /*Hero*/
+    .hero {
+        padding: 70px 20px;
+    }
+    .hero-content h1 {
+        font-size: 42px;
+    }
+    .hero-content p {
+        font-size: 16px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .hero-buttons a {
+        text-align: center;
+    }
+    /* Hero card */
+    .hero-card {
+        margin-top: 35px;
+    }
+    /* Services */
+    .services {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .service-card {
+        padding: 25px;
+    }
+    /* About */
+    .about-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* Connect section */
+    .social-section {
+        padding: 75px 20px;
+    }
+    .social-links {
+        flex-wrap: wrap;
+    }
+    /*Floating WhatsApp */
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        right: 18px;
+        bottom: 18px;
+        font-size: 28px;
+    }
+}
+/* =========================
+   STICKY NAV SCROLL OFFSET
+========================= */
+
+section {
+    scroll-margin-top: 90px;
+}
+/* =========================
+   PREMIUM BUTTON ANIMATIONS
+========================= */
+
+.primary-button,
+.secondary-button,
+.nav-button {
+    transition: all 0.3s ease;
+}
+
+.primary-button:hover,
+.nav-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(25, 211, 255, 0.3);
+}
+
+.secondary-button:hover {
+    transform: translateY(-3px);
+    border-color: #19d3ff;
+    color: #19d3ff;
+}
+
+/* MOBILE NAVIGATION FIX */
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+        width: 100%;
+        order: 3;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-button {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
+}
+/* HORIZONTAL SOCIAL ICONS ON MOBILE */
+
+@media (max-width: 600px) {
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+        font-size: 20px;
+    }
+}
+/* SERVICE CARDS: 2 ROWS ON MOBILE */
+
+@media (max-width: 800px) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .service-card {
+        padding: 12px 8px;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .service-card h3 {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .service-card p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .service-icon {
+        font-size: 28px;
+    }
+}
+
+/* YOUTUBE AND EMAIL SOCIAL ICONS */
+.social-icon.youtube {
+    background: #ff0000;
+    color: #ffffff;
+}
+
+.social-icon.email {
+    background: #19d3ff;
+    color: #07111f;
+}
+
+/* MOBILE-FRIENDLY SOCIAL ICONS */
+@media (max-width: 600px) {
+    .social-section {
+        padding: 35px 12px;
+    }
+
+    .social-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .social-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        flex: 0 0 42px;
+        font-size: 18px;
+    }
+
+    .social-container h2 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .social-container p {
+        font-size: 14px;
+    }
+}
+
+/* PREVENT FLOATING WHATSAPP FROM COVERING SOCIAL ICONS */
+@media (max-width: 600px) {
+    .social-section {
+        padding-bottom: 90px;
+    }
+
+    .social-links {
+        padding-bottom: 15px;
+    }
+
+    .whatsapp-float {
+        z-index: 9999;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* DIGITAL BOOST AGENCY LOGO */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+    width: 170px;
+    height: auto;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+/* FOOTER LOGO */
+.footer .logo img {
+    width: 150px;
+    max-height: 60px;
+}
+
+/* MOBILE LOGO */
+@media (max-width: 600px) {
+    .logo img {
+        width: 130px;
+        max-height: 50px;
+    }
+
+    .footer .logo img {
+        width: 125px;
+        max-height: 45px;
+    }
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* PERFECT CIRCLE LOGO */
+.logo img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+/* FOOTER CIRCULAR LOGO */
+.footer .logo img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+
+/* ANIMATED HEADER AND FOOTER LOGOS */
+.logo img {
+    border-radius: 50%;
+    animation: logoPulse 2.5s ease-in-out infinite;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Gentle glowing pulse */
+@keyframes logoPulse {
+    0%, 100% {
+        box-shadow: 0 0 0 rgba(25, 211, 255, 0);
+        filter: brightness(1);
+    }
+
+    50% {
+        box-shadow: 0 0 18px rgba(25, 211, 255, 0.65);
+        filter: brightness(1.12);
+    }
+}
+
+/* Hover effect */
+.logo:hover img {
+    transform: scale(1.12) rotate(3deg);
+    filter: brightness(1.2);
+}
+
+/* Keep the logo circular */
+.logo img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .logo img {
+        animation: none;
+        transition: none;
+    }
+}
